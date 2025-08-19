@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.D. RenovaWork | Renovations & Construction</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #eaeaea;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 140px 20px;
+    }
+    header h1 {
+      font-size: 3.8rem;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.4rem;
+      margin-bottom: 25px;
+      color: #ddd;
+    }
+    header a {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #e63946;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    header a:hover {
+      background: #d62828;
+      transform: translateY(-3px);
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background: rgba(0,0,0,0.8);
+      border-radius: 15px;
+      margin-bottom: 50px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.3rem;
+      color: #e63946;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #e63946;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+    .services, .why-choose, .team, .clients {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #fff;
+    }
+    .card p {
+      color: #bbb;
+    }
+    .about-text {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.15rem;
+      color: #ccc;
+      line-height: 1.8;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact p {
+      margin: 12px 0;
+      font-size: 1.15rem;
+    }
+    .contact a {
+      color: #e63946;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      color: #fff;
+    }
+    .location {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      background: #1a1a1a;
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      color: #e63946;
+      font-weight: bold;
+    }
+    footer {
+      background: #050505;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95rem;
+      color: #777;
+      letter-spacing: 1px;
+    }
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    [data-animate].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>S.D. RenovaWork</h1>
+    <p>Complete Renovations & Construction | Engineering & Architecture Expertise</p>
+    <a href="#contact">Get in Touch</a>
+  </header>
+
+  <section id="about" data-animate>
+    <h2>About Us</h2>
+    <p class="about-text">
+      At <strong>S.D. RenovaWork</strong>, we are passionate about transforming spaces with precision, creativity, and craftsmanship. With over <strong>30 years of experience</strong>, we have built a reputation for excellence. Based in Drogheda and serving Dublin and the surrounding areas, we specialise in complete renovations, construction, commercial fit-outs, and architectural solutions. <br><br>
+      With a strong foundation in <strong>engineering and architecture</strong>, our team brings technical expertise together with modern design to deliver projects that are not only functional but visually striking. We pride ourselves on offering a <strong>snag-free, high-quality finish</strong> on every project, from concept and planning through to completion. <br><br>
+      Whether you are a homeowner, contractor, or developer, <strong>S.D. RenovaWork</strong> provides an all-in-one service. Our commitment to excellence, reliability, and customer satisfaction makes us the trusted choice for clients across Leinster.
+    </p>
+  </section>
+
+  <section id="services" data-animate>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Complete Renovations</h3>
+        <p>Transforming homes and commercial spaces with bespoke, high-quality finishes tailored to your vision.</p>
+      </div>
+      <div class="card">
+        <h3>Construction</h3>
+        <p>Reliable and durable building services for residential and commercial projects, built to last.</p>
+      </div>
+      <div class="card">
+        <h3>Kitchen & Bathroom Renovations</h3>
+        <p>Stylish and functional upgrades with premium finishes to transform your living spaces.</p>
+      </div>
+      <div class="card">
+        <h3>Home Extensions & Conversions</h3>
+        <p>Attic conversions, garage conversions, and extensions designed to expand your home.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial Fit-Outs</h3>
+        <p>Custom fit-out solutions that combine modern design and functionality for your business space.</p>
+      </div>
+      <div class="card">
+        <h3>Property Maintenance</h3>
+        <p>Reliable maintenance services for landlords, businesses, and property owners.</p>
+      </div>
+      <div class="card">
+        <h3>Engineering & Architecture</h3>
+        <p>Professional expertise in planning and execution, ensuring precision and compliance at every stage.</p>
+      </div>
+      <div class="card">
+        <h3>Project Management</h3>
+        <p>Complete A-to-Z project management for stress-free renovations and builds.</p>
+      </div>
+      <div class="card">
+        <h3>Energy Efficiency Upgrades</h3>
+        <p>Insulation, windows, and eco-friendly solutions to make your property more efficient.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Home Installations</h3>
+        <p>Modern automation, lighting, and security systems for convenience and safety.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" data-animate>
+    <h2>Why Choose Us?</h2>
+    <div class="why-choose">
+      <div class="card">
+        <h3>High-Quality Finish</h3>
+        <p>We guarantee snag-free results with exceptional attention to detail in every project.</p>
+      </div>
+      <div class="card">
+        <h3>All-in-One Service</h3>
+        <p>From concept to completion, we handle everything A to Z, giving you peace of mind.</p>
+      </div>
+      <div class="card">
+        <h3>Trusted Expertise</h3>
+        <p>With engineering and architectural knowledge, we deliver durable, safe, and stylish solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Local & Reliable</h3>
+        <p>Serving Drogheda, Dublin, and surrounding areas with trusted craftsmanship and professionalism.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" data-animate>
+    <h2>Our Trusted Crews</h2>
+    <div class="team">
+      <div class="card">
+        <h3>Skilled Professionals</h3>
+        <p>We collaborate with reliable, highly trained tradespeople to ensure every detail is completed to perfection.</p>
+      </div>
+      <div class="card">
+        <h3>Trusted Partnerships</h3>
+        <p>Over the years, we’ve built strong relationships with trusted subcontractors and suppliers to guarantee quality and reliability.</p>
+      </div>
+      <div class="card">
+        <h3>Efficient Project Delivery</h3>
+        <p>By working with dependable crews, we ensure projects are delivered on time, without compromising on quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-animate>
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p><strong>Steven</strong></p>
+      <p>Email: <a href="mailto:sd.renovawork@gmail.com">sd.renovawork@gmail.com</a></p>
+      <p>Phone: <a href="tel:0899672120">089 967 2120</a></p>
+      <p class="location">Drogheda and Surroundings</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 S.D. RenovaWork | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('[data-animate]');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
